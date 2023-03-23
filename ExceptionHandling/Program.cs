@@ -12,6 +12,7 @@
             try
             {
                 CheckAge(age);
+                Console.WriteLine("You are eligible to vote\n");
             }
             catch(MyException me)
             {
@@ -19,13 +20,13 @@
             }
             try
             {
-                //int c = a / b;
+                int c = a / b;
                 Console.WriteLine(d[5]);
             }
             catch (DivideByZeroException dz) 
             {
                 Console.WriteLine(dz.Message);
-                Console.WriteLine("Do not try to divide by 0");
+                Console.WriteLine("Do not try to divide by 0\n");
             }
             catch(IndexOutOfRangeException ie)
             {
@@ -50,6 +51,7 @@
                 throw new MyException("You should be above 18 to be eligible for voting");
             }
         }
+        // Custom Exceptions
         public class MyException : Exception
         {
             public MyException(string msg) : base(msg) 
