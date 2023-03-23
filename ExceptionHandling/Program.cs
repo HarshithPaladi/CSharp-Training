@@ -7,6 +7,16 @@
             int a = 10;
             int b = 0;
             int[] d = {a, b};
+            Console.WriteLine("Enter age: ");
+            int age = Convert.ToInt32(Console.ReadLine()); 
+            try
+            {
+                CheckAge(age);
+            }
+            catch(MyException me)
+            {
+                Console.WriteLine(me.Message);
+            }
             try
             {
                 //int c = a / b;
@@ -32,6 +42,20 @@
                 Console.WriteLine("Finally finished"); 
             }
             
+        }
+        public static void CheckAge(int age)
+        {
+            if (age < 18)
+            {
+                throw new MyException("You should be above 18 to be eligible for voting");
+            }
+        }
+        public class MyException : Exception
+        {
+            public MyException(string msg) : base(msg) 
+            {
+
+            }
         }
     }
 }
