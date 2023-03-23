@@ -22,7 +22,7 @@
         static void Main(string[] args)
         {
 
-            Program myProgram = new Program("yaswanth", 8, "automobile", 8.8f);
+            Program myProgram = new Program("Harshith", 8, "automobile", 8.8f);
             myProgram.displayStudent();
             Program myProgram1 = new Program("varun", 10, "cs", 9.2f);
             myProgram1.displayStudent();
