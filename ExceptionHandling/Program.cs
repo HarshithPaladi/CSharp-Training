@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            Class1  c1 = new Class1();
             int a = 10;
             int b = 0;
             int[] d = {a, b};
