@@ -17,12 +17,15 @@
             foreach (var item in ListDemo)
             { Console.WriteLine(item); }
 
-            // Fill in code
+            //Hashset
+            var hashset1 = new HashSet<int>() { 1, 2, 3, 3, 4, 4, 5, 6 };
+            hashset1.ToList().ForEach(x => Console.Write(x + " "));
+            System.Console.WriteLine("\n");
 
 
 
-            var ExampleIntegerSet = new SortedSet<int>() { 5,1,8,2,9,0,12};
-            var ExampleSet = new SortedSet<char>() { 'B','L','A','D'};
+            var ExampleIntegerSet = new SortedSet<int>() { 5, 1, 8, 2, 9, 0, 12 };
+            var ExampleSet = new SortedSet<char>() { 'B', 'L', 'A', 'D' };
             foreach (var item in ExampleIntegerSet)
             {
                 Console.WriteLine($" IntegerSet - {item}");
