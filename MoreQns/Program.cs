@@ -9,24 +9,25 @@
         {
             Console.WriteLine("Enter which prog to run: ");
             int a1 = Convert.ToInt32(Console.ReadLine());
-            switch (a1) {
+            switch (a1)
+            {
                 case 1:
-            // 1
-            Dictionary<int, int> hashtable = new Dictionary<int, int>();
-            Console.Write("Enter elements in Single Line with Space: ");
-            List<int> arr = Console.ReadLine().TrimEnd().Split(" ").ToList().Select(x => Convert.ToInt32(x)).ToList();
-            int count = 0;
-            foreach (int i in arr)
-            {
-                hashtable[i] = (hashtable.TryGetValue(i, out var value) ? value : 0) + 1;
-            }
-            foreach (KeyValuePair<int, int> item in hashtable)
-            {
-                if (item.Value > 1) count++;
-            }
-            Console.WriteLine($"No. of Duplicate elements in array are :{count}");
+                    // 1
+                    Dictionary<int, int> hashtable = new Dictionary<int, int>();
+                    Console.Write("Enter elements in Single Line with Space: ");
+                    List<int> arr = Console.ReadLine().TrimEnd().Split(" ").ToList().Select(x => Convert.ToInt32(x)).ToList();
+                    int count = 0;
+                    foreach (int i in arr)
+                    {
+                        hashtable[i] = (hashtable.TryGetValue(i, out var value) ? value : 0) + 1;
+                    }
+                    foreach (KeyValuePair<int, int> item in hashtable)
+                    {
+                        if (item.Value > 1) count++;
+                    }
+                    Console.WriteLine($"No. of Duplicate elements in array are :{count}");
                     break;
-                    case 2:
+                case 2:
                     Dictionary<int, int> hashtable1 = new Dictionary<int, int>();
                     Console.Write("Enter elements in Single Line with Space: ");
                     List<int> arr1 = Console.ReadLine().TrimEnd().Split(" ").ToList().Select(x => Convert.ToInt32(x)).ToList();
@@ -35,7 +36,7 @@
                     arr1 = arr1.Concat(arr2).ToList();
                     arr1.Sort();
                     Console.Write($"[{string.Join(",", arr1)}]");
-                    break; 
+                    break;
                 case 3:
                     Console.Write("Enter elements in Single Line with Space: ");
                     List<int> arr3 = Console.ReadLine().TrimEnd().Split(" ").ToList().Select(x => Convert.ToInt32(x)).ToList();
@@ -43,6 +44,7 @@
                     List<int> evenList = new List<int>();
                     foreach (var a in arr3)
                     {
+
                         if ((a & 1) == 1) oddList.Add(a);
                         else evenList.Add(a);
                     }
@@ -52,6 +54,6 @@
 
 
             }
-    }
+        }
     }
 }
