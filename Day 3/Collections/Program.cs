@@ -1,4 +1,6 @@
-﻿namespace Collections
+﻿using System.Collections.Generic;
+
+namespace Collections
 {
     internal class Program
     {
@@ -66,9 +68,98 @@
                     Console.WriteLine($" | Peak Element: {q_peekvalue}");
                 }
             }
+            Console.WriteLine("\nLinked Lists\n");
+            // Linked List
+            var MyLinkedList = new LinkedList<int>();
+            var myLinkedList1 = new LinkedList<int>();
+            MyLinkedList.AddLast(1);
+            MyLinkedList.AddLast(2);
+            MyLinkedList.AddLast(3);
+            MyLinkedList.AddLast(4);
+            MyLinkedList.AddLast(5);
+            MyLinkedList.AddLast(2);
+            MyLinkedList.AddLast(3);
 
+            //LinkedListNode<int> node = MyLinkedList.Find(2);
+            //LinkedListNode<int> node1 = MyLinkedList.FindLast(2);
 
+            //MyLinkedList.AddBefore(node, 10);
+            //MyLinkedList.AddBefore(node1, 10);
+            foreach (var i in MyLinkedList)
+            {
+                if (i == 2)
+                {
+                    myLinkedList1.AddLast(10);
 
+                }
+                myLinkedList1.AddLast(i);
+            }
+
+            foreach (int i in myLinkedList1)
+            {
+                Console.WriteLine(i);
+            }
+
+            // Dictionaries
+            Console.WriteLine("Dictionaries\n");
+            Dictionary<int, string> d = new Dictionary<int, string>();
+            d.Add(1, "Harshith");
+            d.Add(2, "Sravani");
+            d.Add(3, "Maha");
+            d.Add(4, "Akshai");
+            d.Add(5, "Rahul");
+            d.Add(6, "Rahul");
+            d.Add(7, "");
+            Console.WriteLine(d.ContainsValue("Harshith"));
+            d.Remove(6);
+            if (d.ContainsValue("Rahul"))
+            {
+                d[5] = "CHANGED";
+            }
+            foreach (KeyValuePair<int, string> kvp in d)
+            {
+                if (kvp.Value.Equals("Maha"))
+                {
+                    d[kvp.Key] = "MAHA";
+                }
+            }
+            foreach (KeyValuePair<int, string> kvp in d)
+            {
+                Console.WriteLine(kvp.Key+ " = " + kvp.Value);
+            }
+
+            Console.WriteLine(d.GetValueOrDefault(8, "DEFAULT"));
+            // Sorted Dictionary
+            Console.WriteLine("Sorted Dictionary");
+            SortedDictionary<string,string> Sd = new SortedDictionary<string,string>(); ;
+            Sd.Add("a", "Apple");
+            Sd.Add("b", "Ball");
+            Sd.Add("c", "Cat");
+            Sd.Add("D", "dog");
+            Sd.Add("1", "one");
+            Sd.Add("2", "");
+            foreach(var item in Sd.OrderBy(x => x.Value)) 
+            {
+                Console.WriteLine(item);
+                if (item.Value == "one")
+                {
+                    Sd.Remove(item.Key);
+                }
+            }
+
+            foreach(KeyValuePair<string,string> item in Sd)
+            {
+                if (item.Value.Equals("one"))
+                {
+                    Sd.Remove(item.Key);
+                }
+            }
+            foreach(var key in Sd)
+            {
+                Console.WriteLine(key.Key +  " = " + key.Value);
+            }
+
+            // Sorted Lists
 
         }
     }
