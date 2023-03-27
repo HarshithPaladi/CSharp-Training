@@ -27,7 +27,7 @@ namespace OOPS
         {
             Console.WriteLine("In Volvo car");
         }
-        public void ABS()
+        public new void ABS()
         {
             Console.WriteLine("ADvanced Volvo aBS");
         }
