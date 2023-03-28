@@ -57,7 +57,7 @@
             add sum = (num1, num2) => num1 + num2; // => is lamda ??
             Console.WriteLine(sum.Invoke(12, 45));
 
-            Print Msg = (str)=> { Console.WriteLine(str); };
+            Print Msg = (str) => { Console.WriteLine(str); };
             Msg.Invoke("Hello from delegate lamda exp");
 
             var sumnd = (int num1, int num2) => num1 + num2;
@@ -79,6 +79,17 @@
             Console.WriteLine("-------------------------------------");
             var student = new Student();
             student.method();
+            Console.WriteLine("-------------------------------------");
+            runner.StatementLambda(12, 9);
+            Console.WriteLine("-------------------------------------");
+            int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8 };
+            int count = nums.Count(n => n % 2 == 0);
+            Console.WriteLine(count);
+            int[] numbers = { 1, 2, 3, 4, 5, 6 };
+            Console.WriteLine("-------------------------------------");
+            Func<int, int, int> Fn = (a, b) => a + b;
+            Console.WriteLine(Fn(5, 5));
+
         }
 
     }
