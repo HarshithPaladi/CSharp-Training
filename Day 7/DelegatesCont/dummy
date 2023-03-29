@@ -1,0 +1,41 @@
+        //Dependency of one method on  another
+        public static async Task<string> stringMethod1()
+        {
+            Console.WriteLine("string 1 started");
+            Console.WriteLine(await stringMethod2());      //It waits till - stringMethod2 completes execution and returns the value
+            Console.WriteLine("string 1 ended");
+            return "1 completed";
+        }
+        public static async Task<string> stringMethod2()
+        {
+            Console.WriteLine("strng 2 started");
+            await Task.Delay(5000);                          //waits for 5sec
+            string mas = "msg from strig 2 method";
+            Console.WriteLine("string 2 ended");
+            return mas;
+        }
+        public static async Task<int> dummy()                //Doesnt wait for above methods
+        {
+            Console.WriteLine("dummy method"); 
+            return 1;
+        }
+    }
+    public static void Main(string[] args)
+        {
+            //Async programming
+            //Task<int> num = AsyncClass.number();
+            //AsyncClass.method1();
+            //AsyncClass.method2();
+            //await num;
+            //Console.WriteLine("number: " + num.Result);
+            var calculation = new System.Diagnostics.Stopwatch();
+            calculation.Start();
+            var m1 = AsyncClass.method1();
+            var m2 = AsyncClass.method2();
+            var m3 = AsyncClass.method3();
+            Task.WaitAll(m1,m2,m3);
+            //AsyncClass.stringMethod1();
+            //Console.WriteLine(AsyncClass.dummy().Result);  // it executes dummy instead of waiting for stringMethod1
+            calculation.Stop();
+            Console.WriteLine("Time: "+calculation.ElapsedMilliseconds);
+            Console.ReadLine();                             //so that everything is executed before program terminated
