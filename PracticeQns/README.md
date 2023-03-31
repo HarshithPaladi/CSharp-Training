@@ -15,7 +15,7 @@ Food has to be provided to all participants.
 
 Please write a C# program to make use of the Async Programming concepts and write the program so that all of the above happen in a correct order.
 ```
-Code: [Click Here](PracticeQns\AsyncQn.cs)
+Code: [Click Here](PracticeQns/AsyncQn.cs)
 
 <details>
 <summary>Output</summary>
@@ -60,7 +60,7 @@ Create a default photo book and show the number of pages
 Create a photo book with 32 pages and show the number of pages
 Create a large photo book and show the number of pages
 ```
-Code: [Click Here](PracticeQns\OopsPhotoBook.cs)
+Code: [Click Here](PracticeQns/OopsPhotoBook.cs)
 
 <details>
 <summary>Output</summary>
@@ -133,7 +133,7 @@ From 16 to 17 is regular, so 1 * 30 = 30
 From 17 to 18 is overtime, so 1 * 30 * 1.8 = 54
 30 + 54 = $84.00
 ```
-Code: [Click Here](PracticeQns\PayCalc.cs)
+Code: [Click Here](PracticeQns/PayCalc.cs)
 
 <details>
 <summary>Output</summary>
