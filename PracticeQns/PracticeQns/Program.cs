@@ -1,0 +1,17 @@
+﻿namespace PracticeQns
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // var run = new AsyncQn();
+            // run.runner();
+
+            // var run1 = new PhotoBookTest();
+
+            var paycalc = new PayCalc();
+            paycalc.runner();
+
+        }
+    }
+}
