@@ -15,7 +15,11 @@ Food has to be provided to all participants.
 
 Please write a C# program to make use of the Async Programming concepts and write the program so that all of the above happen in a correct order.
 ```
-Output: 
+Code: [Click Here](PracticeQns\AsyncQn.cs)
+
+<details>
+<summary>Output</summary>
+
 ```
 Security check started..
 guest arivved at airport
@@ -38,6 +42,8 @@ Lunch started
 Lunch ended
 ............ END OF PROGRAM ............
 ```
+</details>
+
 ### Q2
 ```
 Create a C# program to manage a photo book using OOPs.
@@ -54,13 +60,21 @@ Create a default photo book and show the number of pages
 Create a photo book with 32 pages and show the number of pages
 Create a large photo book and show the number of pages
 ```
-Output :
+Code: [Click Here](PracticeQns\OopsPhotoBook.cs)
+
+<details>
+<summary>Output</summary>
+
 ```
 Default photobook pages : 16
 Number of pages : 32
 Large Photo book : 64
 ```
-Testing Output:
+</details>
+
+<details>
+<summary>Testing Output</summary>
+
 ```
 ----- Running tests in class "PracticeQns.Tests.OopsPhotoBookTests" -----
 
@@ -89,6 +103,8 @@ PracticeQns.Tests.OopsPhotoBookTests.addPhotoBookTest:
     
 Total tests: 4. Passed: 4. Failed: 0. Skipped: 0
 ```
+</details>
+
 ### Q3
 ```
 Working 9 to 5
@@ -117,13 +133,21 @@ From 16 to 17 is regular, so 1 * 30 = 30
 From 17 to 18 is overtime, so 1 * 30 * 1.8 = 54
 30 + 54 = $84.00
 ```
-Output :
+Code: [Click Here](PracticeQns\PayCalc.cs)
+
+<details>
+<summary>Output</summary>
+
 ```
 Salary is 240
 Salary is 84
 Salary is 52.5
 ```
-Testing Output :
+</details>
+
+<details>
+<summary>Testing Output</summary>
+
 ```
 ----- Running tests in class "PracticeQns.Tests.PayCalcTests" -----
 
@@ -148,3 +172,4 @@ PracticeQns.Tests.PayCalcTests.ingressDataTest:
     
 Total tests: 1. Passed: 1. Failed: 0. Skipped: 0
 ```
+</details>
