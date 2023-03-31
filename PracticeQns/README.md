@@ -1,4 +1,7 @@
 # Practice Questions
+<details>
+<summary>31 March 2023 Questions</summary>
+
 ## 31 March 2023
 ### Q1
 ``` An event is organized and the following has to happen. 
@@ -172,4 +175,5 @@ PracticeQns.Tests.PayCalcTests.ingressDataTest:
     
 Total tests: 1. Passed: 1. Failed: 0. Skipped: 0
 ```
+</details>
 </details>
