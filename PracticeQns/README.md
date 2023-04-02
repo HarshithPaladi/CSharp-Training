@@ -1,4 +1,5 @@
 # Practice Questions
+> Click to expand / collapse
 <details>
 <summary>31 March 2023 Questions</summary>
 

@@ -1,4 +1,5 @@
 ## Assignments
+> Click to expand / collapse
 <details>
 <summary>Week-2 Assignment</summary>
 
