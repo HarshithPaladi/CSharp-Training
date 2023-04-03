@@ -9,9 +9,11 @@
 
             // var run1 = new PhotoBookTest();
 
-            var paycalc = new PayCalc();
-            paycalc.runner();
+            //var paycalc = new PayCalc();
+            //paycalc.runner();
 
+            var wordConverter = new RunnerConverter();
+            wordConverter.runner();
         }
     }
 }
