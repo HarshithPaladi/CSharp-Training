@@ -30,7 +30,7 @@ TranslateWord("flag") ➞ "agflay"
 TranslateWord("Apple") ➞ "Appleyay"
 
 TranslateWord("button") ➞ "uttonbay"
-qwtyhk
+
 TranslateWord("") ➞ ""
 
 TranslateSentence("I like to eat honey waffles.") ➞ "Iyay ikelay otay eatyay oneyhay afflesway."

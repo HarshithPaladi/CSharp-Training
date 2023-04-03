@@ -3,7 +3,6 @@
 <details>
 <summary>31 March 2023 Questions</summary>
 
-## 31 March 2023
 ### Q1
 ``` An event is organized and the following has to happen. 
 The chief guest needs to be picked up from the airport. 
@@ -64,7 +63,8 @@ Create a default photo book and show the number of pages
 Create a photo book with 32 pages and show the number of pages
 Create a large photo book and show the number of pages
 ```
-Code: [Click Here](PracticeQns/OopsPhotoBook.cs)
+Code: [Click Here](PracticeQns/OopsPhotoBook.cs)<br>
+Testing Code: [Click Here](PracticeQnsTests/OopsPhotoBookTests.cs)
 
 <details>
 <summary>Output</summary>
@@ -137,7 +137,8 @@ From 16 to 17 is regular, so 1 * 30 = 30
 From 17 to 18 is overtime, so 1 * 30 * 1.8 = 54
 30 + 54 = $84.00
 ```
-Code: [Click Here](PracticeQns/PayCalc.cs)
+Code: [Click Here](PracticeQns/PayCalc.cs)<br>
+Testing Code: [Click Here](PracticeQnsTests/PayCalcTests.cs)
 
 <details>
 <summary>Output</summary>
@@ -175,6 +176,95 @@ PracticeQns.Tests.PayCalcTests.ingressDataTest:
 
     
 Total tests: 1. Passed: 1. Failed: 0. Skipped: 0
+```
+</details>
+</details>
+<details>
+<summary>03 April 2023 Questions</summary>
+
+### Q1
+```
+Question:
+English to Pig Latin Translator
+
+
+
+Pig latin has two very simple rules:
+
+If a word starts with a consonant move the first letter(s) of the word, till you reach a vowel, to the end of the word and add "ay" to the end.
+have ➞ avehay
+cram ➞ amcray
+take ➞ aketay
+cat ➞ atcay
+shrimp ➞ impshray
+hrimps
+rimpsh
+impshr
+mpshri
+
+trebuchet ➞ ebuchettray
+If a word starts with a vowel add "yay" to the end of the word.
+ate ➞ ateyay
+apple ➞ appleyay
+oaken ➞ oakenyay
+eagle ➞ eagleyay
+Write two functions to make an English to pig latin translator. The first function TranslateWord(word) takes a single word and returns that word translated into pig latin. The second function TranslateSentence(sentence) takes an English sentence and returns that sentence translated into pig latin.
+
+Examples
+TranslateWord("flag") ➞ "agflay"
+
+TranslateWord("Apple") ➞ "Appleyay"
+
+TranslateWord("button") ➞ "uttonbay"
+
+TranslateWord("") ➞ ""
+
+TranslateSentence("I like to eat honey waffles.") ➞ "Iyay ikelay otay eatyay oneyhay afflesway."
+
+TranslateSentence("Do you think it is going to rain today?") ➞ "Oday ouyay inkthay ityay isyay oinggay otay ainray odaytay?"
+Notes
+Regular expressions will help you not mess up the punctuation in the sentence.
+If the original word or sentence starts with a capital letter, the translation should preserve its case (see examples #2, #5 and #6).
+```
+Code: [Click Here](PracticeQns/EnglishToPigLatin.cs)<br>
+Testing Code: [Click Here](PracticeQnsTests/IEnglishToPigLatinTests.cs)
+<details>
+<summary>Output</summary>
+
+```
+impshray
+qwtyhkay!?.
+Iyay ikelay otay eatyay oneyhay afflesway
+Oday ouyay Inkthay ityay isyay oinggay otay ainray odaytay?
+Oday ouyay Inkthay, ityay isyay oinggay otay Ainray odaytay?
+```
+</details>
+<details>
+<summary>Testing Output</summary>
+
+```
+----- Running tests in class "PracticeQns.Tests.IEnglishToPigLatinTests" -----
+
+MSBuild version 17.5.0+6f08c67f3 for .NET
+Build succeeded.
+Time Elapsed 00:00:15.66
+----- Test Execution Summary -----
+
+PracticeQns.Tests.IEnglishToPigLatinTests.TranslateWordTest:
+    Outcome: Passed
+    Standard Output Messages:
+    Expected result: impshray?!.
+Actual Result: impshray?!.
+
+    
+PracticeQns.Tests.IEnglishToPigLatinTests.TranslateSentenceTest:
+    Outcome: Passed
+    Standard Output Messages:
+    Expected result: Oday ouyay inkthay ityay isyay oinggay otay ainray odaytay?
+Actual Result: Oday ouyay inkthay ityay isyay oinggay otay ainray odaytay?
+
+    
+Total tests: 2. Passed: 2. Failed: 0. Skipped: 0
 ```
 </details>
 </details>
