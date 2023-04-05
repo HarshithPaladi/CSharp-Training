@@ -12,8 +12,11 @@
             //var paycalc = new PayCalc();
             //paycalc.runner();
 
-            var wordConverter = new RunnerConverter();
-            wordConverter.runner();
+            // var wordConverter = new RunnerConverter();
+            // wordConverter.runner();
+
+            var combinationRunner = new Combination();
+            combinationRunner.CombinationRunner();
         }
     }
 }
