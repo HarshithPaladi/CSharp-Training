@@ -355,3 +355,106 @@ Total tests: 9. Passed: 9. Failed: 0. Skipped: 0
 ```
 </details>
 </details>
+</details>
+<details>
+<summary>06 April 2023 Questions</summary>
+
+### Q3
+```
+In Nico Cipher, encoding is done by creating a numeric key and assigning each letter position of the message with the provided key.
+
+Create a function that takes two arguments, key and message, and returns the encoded message.
+
+There are some variations on the rules of encipherment. One version of the cipher rules are outlined below:
+
+message = "mubashirhassan"
+key = "crazy"
+c r a z y -> a c r y z
+             1 2 3 4 5
+2 3 1 5 4
+nicoCipher(message, key) ➞ "bmusarhiahass n"
+Step 1: Assign numbers to sorted letters from the key:
+
+"crazy" = 23154
+Step 2: Assign numbers to the letters of the given message:
+
+2 3 1 5 4
+---------
+m u b a s
+h i r h a
+s s a n  
+Step 3: Sort columns as per assigned numbers:
+
+1 2 3 4 5
+---------
+b m u s a
+r h i a h
+a s s   n
+Step 4: Return encoded message Rows-wise:
+eMessage = "bmusarhiahass n"
+Examples
+NicoCipher("mubashirhassan", "crazy") ➞ "bmusarhiahass n"
+
+NicoCipher("edabitisamazing", "matt") ➞ "deabtiismaaznig "
+2 1 3 4
+deabtiismaaznig
+NicoCipher("iloveher", "612345") ➞ "lovehir    e"
+6 1 2 3 4 5
+i l o v e h
+e r
+--
+1 2 3 4 5 6
+l o v e h i
+r         e
+Notes
+Keys will have alphabets or numbers only.
+```
+Code: [Click Here](PracticeQns/NicoCipher.cs)<br>
+Testing Code: [Click Here](PracticeQnsTests/NicoCipherEncoderTests.cs)<br>
+<details>
+<summary>Output ✔️</summary>
+
+```
+bmusarhiahass n
+deabtiismaaznig
+lovehir    e
+```
+</details>
+<details>
+<summary>Testing Output ✔️</summary>
+
+```
+----- Running tests in class "PracticeQns.Tests.NicoCipherEncoderTests" -----
+
+MSBuild version 17.5.0+6f08c67f3 for .NET
+Build succeeded.
+Time Elapsed 00:00:01.99
+----- Test Execution Summary -----
+
+PracticeQns.Tests.NicoCipherEncoderTests.NicoCipherTest_mubashirhassan:
+    Outcome: Passed
+    Standard Output Messages:
+    Expected result: bmusarhiahass n
+Actual Result: bmusarhiahass n
+
+    
+PracticeQns.Tests.NicoCipherEncoderTests.NicoCipherTest_edabitisamazing:
+    Outcome: Passed
+    Standard Output Messages:
+    Expected result: deabtiismaaznig 
+Actual Result: deabtiismaaznig 
+
+    
+PracticeQns.Tests.NicoCipherEncoderTests.NicoCipherTest_iloveher:
+    Outcome: Passed
+    Standard Output Messages:
+    Expected result: lovehir    e
+Actual Result: lovehir    e
+
+    
+Total tests: 3. Passed: 3. Failed: 0. Skipped: 0
+
+
+```
+</details>
+</details>
