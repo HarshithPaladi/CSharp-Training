@@ -15,8 +15,11 @@
             // var wordConverter = new RunnerConverter();
             // wordConverter.runner();
 
-            var combinationRunner = new Combination();
-            combinationRunner.CombinationRunner();
+            // var combinationRunner = new Combination();
+            // combinationRunner.CombinationRunner();
+
+            var encoderRunner = new NicoCipherEncoder();
+            encoderRunner.EncoderRunner();
         }
     }
 }
