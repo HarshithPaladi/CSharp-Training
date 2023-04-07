@@ -5,7 +5,7 @@ namespace Week3_Assignment
     {
         static void Main(string[] args)
         {
-            var Runner = new Runner();
+            var CollegeSportsManagementSystem = new CollegeSportsManagementSystem();
 
         }
     }
